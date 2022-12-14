@@ -142,7 +142,7 @@ module.exports = alpha = async (alpha, m, chatUpdate, store, reSize) => {
             },
             "message": {
                 orderMessage: {
-                    itemCount: 2021,
+                    itemCount: 2022,
                     status: 200,
                     thumbnail: pp_bot,
                     surface: 200,
@@ -1844,7 +1844,7 @@ Info: *bold* hash is Locked
                 db.data.users[m.sender].limit -= 1
             }
             break
-            case 'pinterest': {
+            case 'pinterest': case 'pin': {
                 if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
                 if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
                 if (!text) return reply(lang.KisahNabi(prefix, command, 'Bot whatsapp'))
@@ -1997,7 +1997,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'owner':
-            case 'creator': {
+            case 'creator': case 'gar': case 'gaara': {
                 sendContact(alpha, m.chat, global.owner, m)
             }
             break
@@ -2597,7 +2597,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 await alpha.updateBlockStatus(users, 'unblock').then((res) => m.reply(lang.ok())).catch((err) => m.reply(lang.err()))
             }
             break
-            case 'kick': {
+            case 'kick': case 'k': {
                 if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner)) return reply(lang.adminOnly())
