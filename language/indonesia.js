@@ -25,7 +25,7 @@ exports.profile = (username, m, about, pasangan, PhoneNumber, exp, min, xp, math
 
 //
 exports.needReg = (a, b, c) =>{
-	return`🇲🇨 Daftar dulu bang
+	return`🇲🇨 Daftar dulu bank
 
 Gini : #daftar nama|umur|gender|hobi
 Contoh : #daftar ${a}|18|cowo|Game
@@ -1050,7 +1050,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ !twitter link
 
 ╭─❒ 「 Primbon 」
-│○ !nomorhoki 887435047326
+│○ !nomorhoki 81326024103
 │○ !artimimpi [query]
 │○ !artinama [query]
 │○ !ramaljodoh
@@ -1723,6 +1723,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ Nurutomo
 │○ Rashid
 │○ ZeeoneOfc
+│○ Fika Putriana
+│○ Gaara Stywn
+│○ Nadin Stefani
 │○ Penyedia Module
 ╰❒ And All Support
     `
@@ -1740,13 +1743,13 @@ exports.rules = (prefix) => {
 ➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan.
 
 🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini bisa kalian dapatkan di YouTube ZEEONE OFC
+➡️ Script ini bisa kalian cari di youtube
 
 🗯️ Boleh saya menambah ke grup?
 ➡️ Untuk itu tergantung dari owner bot sendiri
 
 🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix & bisa kamu gunakan tanpa prefix
+➡️ Bot ini menggunakan multi prefix
 
 Jika sudah dipahami rules-nya, silakan ketik *${prefix}menu* untuk memulai!
 
@@ -1772,7 +1775,7 @@ exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLBVrgpCpAnw2ZHjdSrdjasj6crrD1RBgm
+Recode : https://youtube.com/playlist?list=PLBVrgpCpAnw2ZHjdSrdjulsj6crrD1RBgm
 `
 }
 exports.tos = (ownernomer) => {
@@ -2446,6 +2449,9 @@ exports.tqto = () =>{
 │○ Nurutomo
 │○ Rashid
 │○ ZeeoneOfc
+│○ Fika Putriana
+│○ Gaara Stywn
+│○ Nadin Stefani
 │○ Penyedia Module
 ╰❒ And All Support
 `
@@ -2453,7 +2459,7 @@ exports.tqto = () =>{
 
 exports.primbonmenu = (prefix) =>{
 	return`╭─❒ 「 Primbon 」
-│○ !nomorhoki 887435047326
+│○ !nomorhoki 81326024103
 │○ !artimimpi [query]
 │○ !artinama [query]
 │○ !ramaljodoh
